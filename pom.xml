@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>be.peopleware</groupId>
+    <artifactId>buildtools</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <!-- Meta information about the project -->
+    <name>Peopleware build tools</name>
+    <description>Build configuration and tools for PeopleWare n.v. maven projects</description>
+
+    <inceptionYear>2016</inceptionYear>
+
+    <organization>
+        <name>PeopleWare n.v.</name>
+        <url>http://www.peopleware.be/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>David Van Keer</name>
+            <id>dvankeerpppw</id>
+            <email>david_van_keer@peopleware.be</email>
+            <timezone>+1</timezone>
+            <organization>PeopleWare n.v.</organization>
+            <organizationUrl>http://www.peopleware.be/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+</project>
