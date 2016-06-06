@@ -8,6 +8,20 @@
     <artifactId>buildtools</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <properties>
+        <version.plugin.s3wagon>1.2.1</version.plugin.s3wagon>
+    </properties>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>${version.plugin.s3wagon}</version>
+            </extension>
+        </extensions>
+    </build>
+
     <!-- Meta information about the project -->
     <name>Peopleware build tools</name>
     <description>Build configuration and tools for PeopleWare n.v. maven projects</description>
@@ -33,4 +47,20 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>repo.ppwcode.org</id>
+            <url>s3://repo.ppwcode.aws.peopleware.be</url>
+        </snapshotRepository>
+        <repository>
+            <id>repo.ppwcode.org</id>
+            <url>s3://repo.ppwcode.aws.peopleware.be</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>repo.ppwcode.org</id>
+            <url>s3://repo.ppwcode.aws.peopleware.be</url>
+        </repository>
+    </repositories>
 </project>
